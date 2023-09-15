@@ -10,8 +10,7 @@ class FavoriteColors extends StatelessWidget {
           padding: EdgeInsets.only(left: 10),
           alignment: Alignment.centerLeft,
           child: Text("Your favorite colors",
-          style: Theme.of(context).textTheme.headline
-              ),
+              style: Theme.of(context).textTheme.headlineMedium),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),

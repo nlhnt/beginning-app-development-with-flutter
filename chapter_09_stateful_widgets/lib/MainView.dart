@@ -4,7 +4,7 @@ import 'FavoriteColors.dart';
 
 class MainView extends StatelessWidget {
   final String title;
-  MainView({Key key, this.title}) : super(key: key);
+  MainView({Key? key, required this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,14 +12,13 @@ class MainView extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body:  Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ColorMixer(),
-            FavoriteColors(),
-          ],
-        ),
-
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          ColorMixer(),
+          FavoriteColors(),
+        ],
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.check),
@@ -27,4 +26,3 @@ class MainView extends StatelessWidget {
     );
   }
 }
-
